@@ -1,0 +1,9 @@
+<strings>
+    <string id="AppName">基金查询</string>
+
+    <string id="prompt">Click the menu button</string>
+
+    <string id="menu_label_1">刷新间隔</string>
+    <string id="menu_label_2">编辑</string>
+    <string id="menu_label_3">设置</string>
+</strings>

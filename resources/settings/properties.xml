@@ -1,0 +1,30 @@
+<resources>
+
+    <properties>
+        <property id="fundCodes" type="string">161725,000689,180012,012895,004812,519674,003096,005669</property>
+        <property id="autoRefresh" type="boolean">false</property>
+		<property id="refreshInterval" type="number">300000</property>
+    </properties>
+
+    <strings>
+       <string id="fundcode_title">基金代码</string>
+    </strings>
+
+    <settings>
+        <setting propertyKey="@Properties.fundCodes" title="@Strings.fundcode_title" prompt="多个代码用逗号隔开">
+            <settingConfig type="alphaNumeric" />
+        </setting>
+        <setting propertyKey="@Properties.autoRefresh" title="自动刷新" prompt="">
+            <settingConfig type="boolean" />
+        </setting>
+		<setting propertyKey="@Properties.refreshInterval" title="刷新间隔" prompt="">
+			<settingConfig type="list" required="true">
+                <listEntry value="300000">5分钟</listEntry>
+				<listEntry value="600000">10分钟</listEntry>
+				<listEntry value="1200000">20分钟</listEntry>
+				<listEntry value="3600000">1小时</listEntry>
+				<listEntry value="10800000">3小时</listEntry>
+			</settingConfig>
+		</setting>
+    </settings>
+</resources>

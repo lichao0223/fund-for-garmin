@@ -1,0 +1,17 @@
+<menus>
+    <menu2 id="MainMenu" title="设置">
+        <menu-item id="refreshInterval" label="@Strings.menu_label_1" subLabel="1小时"/>
+        <menu-item id="test" label="@Strings.menu_label_1" subLabel="1小时"/>
+    </menu2>
+
+    <menu id="RefreshIntervalMenu">
+        <menu-item id="refreshInterval0" label="10分钟" />
+        <menu-item id="refreshInterval1" label="20分钟" />
+        <menu-item id="refreshInterval2" label="1小时" />
+        <menu-item id="refreshInterval3" label="3小时" />
+    </menu>
+
+    <menu id="RightMenu">
+        <menu-item id="refresh" label="刷新" />
+    </menu>
+</menus>
