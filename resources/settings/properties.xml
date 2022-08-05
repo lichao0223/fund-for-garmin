@@ -8,16 +8,19 @@
 
     <strings>
        <string id="fundcode_title">基金代码</string>
+       <string id="fundcode_prompt">多个代码用逗号隔开</string>
+       <string id="autoRefresh_title">自动刷新</string>
+       <string id="refreshInterval_title">刷新间隔</string>
     </strings>
 
     <settings>
-        <setting propertyKey="@Properties.fundCodes" title="@Strings.fundcode_title" prompt="多个代码用逗号隔开">
+        <setting propertyKey="@Properties.fundCodes" title="@Strings.fundcode_title" prompt="@String.fundcode_prompt">
             <settingConfig type="alphaNumeric" />
         </setting>
-        <setting propertyKey="@Properties.autoRefresh" title="自动刷新" prompt="">
+        <setting propertyKey="@Properties.autoRefresh" title="@String.autoRefresh_title" prompt="">
             <settingConfig type="boolean" />
         </setting>
-		<setting propertyKey="@Properties.refreshInterval" title="刷新间隔" prompt="">
+		<setting propertyKey="@Properties.refreshInterval" title="@String.refreshInterval_title" prompt="">
 			<settingConfig type="list" required="true">
                 <listEntry value="300000">5分钟</listEntry>
 				<listEntry value="600000">10分钟</listEntry>
